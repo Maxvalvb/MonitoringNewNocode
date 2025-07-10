@@ -1,0 +1,49 @@
+{
+  "name": "finflow-backend",
+  "version": "1.0.0",
+  "description": "Backend API для no-code платформы FinFlow",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:migrate": "node dist/scripts/migrate.js",
+    "db:seed": "node dist/scripts/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.6",
+    "knex": "^3.0.1",
+    "uuid": "^9.0.1",
+    "joi": "^17.11.0",
+    "pdf-parse": "^1.1.1",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4",
+    "rate-limiter-flexible": "^4.0.1",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.14",
+    "@types/bcryptjs": "^2.4.4",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/multer": "^1.4.8",
+    "@types/uuid": "^9.0.5",
+    "@types/morgan": "^1.9.6",
+    "@types/compression": "^1.7.4",
+    "@types/pdf-parse": "^1.1.1",
+    "typescript": "^5.2.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "keywords": ["no-code", "workflow", "automation", "document-processing"],
+  "author": "FinFlow Team",
+  "license": "MIT"
+}
